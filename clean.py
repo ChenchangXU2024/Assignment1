@@ -31,3 +31,6 @@ if __name__ == "__main__":
 
     cleaned = clean(args.input1, args.input2, args.output)
     cleaned.to_csv(args.output, index=False)
+
+    # Print the shape of the cleaned DataFrame
+    print(f"The shape of the cleaned DataFrame is: {cleaned.shape}")
